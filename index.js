@@ -1,40 +1,16 @@
 'use strict';
 
-
-// attempt check if the adtech script has loaded.
-var isAdtechLoaded = function isAdtechLoaded() {
-
-  var myScript = document.createElement('script');
-  myScript.src = 'http://ads.pictela.com/ads/jsapi/ADTECH.js';
-  myScript.onload = function() {
-    console.log('Adtech loaded.');
-    return true;
-  };
-  return false;
-};
-
-
 exports.load = function(elems) {
 
+  // Select id, iframe and containerNode.
+  var id = window.frameElement.id;
+  var iframe = window.parent.document.getElementById(id);
+  var containerNode = (iframe === null) ? null : iframe.parentNode;
 
-var action = 'expand';
-
-  if(isAdtechLoaded){
-
-    switch(action){
-      case 'expand':
-      ADTECH.expand();
-      break;
-      case 'collapse':
-      ADTECH.contract();
-      break;
-      default:break;
-    }
-    
-  }
-  else{
-    // we assume is DFP?
-
-  }
+  if (containerNode === null) return null;
+  containerNode.style.height = distance;
+  iframe.style.height = distance;
+  iframe.style.transition= transition;
+  containerNode.style.transition= transition;
 
 }

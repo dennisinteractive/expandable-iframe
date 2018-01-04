@@ -7,6 +7,6 @@ module.exports = function iframeExpand(transition,distance) {
   if (containerNode === null) return null;
   containerNode.style.height = distance;
   iframe.style.height = distance;
-  iframe.style.transition= transition;
-  containerNode.style.transition= transition;
+  iframe.style.transition = transition;
+  containerNode.style.transition = transition;
 };

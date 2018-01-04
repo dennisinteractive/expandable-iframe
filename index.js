@@ -1,7 +1,4 @@
-'use strict';
-
-exports.load = function(elems) {
-
+module.exports = function iframeExpand(transition,distance) {
   // Select id, iframe and containerNode.
   var id = window.frameElement.id;
   var iframe = window.parent.document.getElementById(id);
@@ -12,5 +9,4 @@ exports.load = function(elems) {
   iframe.style.height = distance;
   iframe.style.transition= transition;
   containerNode.style.transition= transition;
-
-}
+};

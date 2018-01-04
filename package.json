@@ -1,28 +1,25 @@
-  "author": {
-    "name": "cristinallamasroman@gmail.com"
+{
+  "name": "expandable-iframe",
+  "version": "1.0.0",
+  "description": "Expand parent iframe when resizing child container.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bugs": {
-    "url": "https://github.com/cristinallamas/expandable-iframe/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristinallamas/expandable-iframe.git"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "plugin will change the height attribute of the iFrame the creative is served in. Additionally it should animate the advert-container div to 100% height.",
-  "homepage": "https://github.com/cristinallamas/expandable-iframe#readme",
+  "author": "Cristina Llamas Roman <cristina.llamas.roman@gmail.com>",
   "keywords": [
     "expandable",
     "iframe",
     "ad",
     "advert"
   ],
-  "license": "GPL-3.0",
-  "main": "index.js",
-  "name": "expandable-iframe",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cristinallamas/expandable-iframe.git"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristinallamas/expandable-iframe/issues"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.0.0"
+  "homepage": "https://github.com/cristinallamas/expandable-iframe#readme"
 }
